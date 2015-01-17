@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster|Oxygen);
+
+.transition (@prop: all, @time: 1s, @ease: linear) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition: @prop @time @ease;
+    -o-transition: @prop @time @ease;
+    -ms-transition: @prop @time @ease;
+    transition: @prop @time @ease;
+}
+
+.quick-gradient (@origin: left, @alpha: 0.2) {
+    background-image: -webkit-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -moz-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -o-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -ms-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+}
+/*==================================================
+=====================   SETUP  =====================
+====================================================*/
+
+@scuro: #3B3B3B;
+@colore: #BBE1C3;
+@color2: #aedcc0;
+@color4: #7bd389;
+@bianco: #A7CDBD;
+
+@grigio-chiaro: #7b7b8e;
+@grigio-scuro:#1f1f29;
+@rosa:#cd1a50;
+@giallo:#cdba1a;
+@smeraldo:#339999;
+
+@sans-serif: 'Abel', sans-serif;
+@serif:Georgia;
+@text-size-big:3,1rem;
+@text-size-normal:1,6rem;
+@text-size-small:0,8rem;
+
+
+.left{ float: left; text-align: left;}
+
+.right{ float: right; text-align: right;}
+
+.logo{font-family: 'Lobster', cursive;}
+
+/*==================================================
+===================  START LESS  ===================
+====================================================*/
+
+  html, body {
+      height: 100%;
+      background-color: #282828;
+      margin: 0;
+      padding: 0;
+      font-family: 'Oxygen', sans-serif;
+    }
+    #owl-demo {
+      min-height: 100%;
+      max-height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;      
+    }
+    #owl-demo .item{
+      height: 100%;
+      min-height: 800px;
+      overflow: auto;
+      /*max-height: 900px;    */
+    }
+    .container_scroll{
+      min-height: 8000px;
+    }
+    h1{
+      margin: 30px auto;
+    }
+    p{
+      font-size: 31px;
+    }
+     
+    /* IE6 hack */
+    * html #container {
+      height: 100%;
+    }
+
+
+
+}
+
